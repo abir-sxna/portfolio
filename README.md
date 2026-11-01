@@ -6,7 +6,7 @@
 
 <br>
 
-<a href="YOUR_WEBSITE_URL">
+<a href="https://abir-sxna.github.io/portfolio">
   <img src="https://img.shields.io/badge/VIEW_LIVE_WEBSITE-FFFFFF?style=for-the-badge&logo=googlechrome&logoColor=000000" alt="View live website" />
 </a>
 &nbsp;
