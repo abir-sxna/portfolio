@@ -553,6 +553,7 @@ ul {
   font-weight: 500;
 }
 
+
 /* TICKER */
 
 .ticker {
@@ -567,14 +568,12 @@ ul {
 .ticker-track {
   display: flex;
   width: max-content;
-  animation: ticker 28s linear infinite;
-}
-
-.ticker:hover .ticker-track {
-  animation-play-state: paused;
+  animation: ticker 18s linear infinite;
+  will-change: transform;
 }
 
 .ticker-track span {
+  flex-shrink: 0;
   white-space: nowrap;
   font: 11px var(--mono);
   letter-spacing: 4px;
@@ -585,6 +584,19 @@ ul {
 .ticker-track b {
   color: #ddd;
   font-weight: 400;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
 }
 
 @keyframes ticker {
