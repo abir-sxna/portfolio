@@ -1327,6 +1327,70 @@ ul {
     display: none;
   }
 }
+  
+/* HERO SPACING & ALIGNMENT FIX */
+
+.hero-content {
+  width: min(1160px, 88%) !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Give the letters room to breathe */
+.hero h1 {
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+/* Separate the two headline lines */
+.hero h1 .line + .line {
+  margin-top: 8px;
+}
+
+/* Keep the headline from feeling cramped */
+.hero h1 .line {
+  overflow: visible;
+}
+
+/* Better hero paragraph alignment */
+.hero-description {
+  margin-top: 32px;
+  max-width: 460px;
+  line-height: 2;
+}
+
+/* Balance the buttons and bottom information */
+.hero-actions {
+  margin-top: 35px;
+}
+
+.hero-bottom {
+  max-width: 750px;
+  margin-top: 85px;
+}
+
+/* Better orbit positioning */
+.hero-art {
+  right: 5%;
+  top: 8%;
+}
+
+/* Smaller screens */
+@media (max-width: 650px) {
+  .hero-content {
+    width: 89% !important;
+  }
+
+  .hero h1 {
+    letter-spacing: -0.045em;
+    line-height: 1;
+  }
+
+  .hero h1 .line + .line {
+    margin-top: 5px;
+  }
+}
+
 </style>
 </head>
 
